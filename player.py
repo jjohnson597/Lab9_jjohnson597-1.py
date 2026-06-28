@@ -28,4 +28,8 @@ class Player:
     def win_coin(self):
         """Add one coin to the player's wallet."""
         self.__wallet += 1
-        
+
+     def lose_coin(self):
+        """Subtract one coin from the player's wallet."""
+        self.__wallet -= 1
+    
