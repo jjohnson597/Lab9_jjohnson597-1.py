@@ -25,3 +25,7 @@ class Player:
         """Return the side currently showing on the player's coin."""
         return self.__coin.get_sideup()
     
+    def win_coin(self):
+        """Add one coin to the player's wallet."""
+        self.__wallet += 1
+        
