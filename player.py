@@ -20,3 +20,8 @@ class Player:
     def toss_coin(self):
         """Tell the player's coin to toss itself."""
         self.__coin.toss()
+    
+    def get_coin_side(self):
+        """Return the side currently showing on the player's coin."""
+        return self.__coin.get_sideup()
+    
