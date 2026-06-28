@@ -43,4 +43,15 @@ def main():
             print(f"...No Match! {player2.get_name()} wins a coin.")
             print(f"\n{player1.get_name()} has {player1.get_wallet()} coins.")
             print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+        
+            print("\n--- Final Score ---")
+    print(f"{player1.get_name()}: {player1.get_wallet()}")
+    print(f"{player2.get_name()}: {player2.get_wallet()}")
+
+    if player1.get_wallet() > player2.get_wallet():
+        print(f"{player1.get_name()} wins the game!")
+    elif player2.get_wallet() > player1.get_wallet():
+        print(f"{player2.get_name()} wins the game!")
+    else:
+        print("It's a draw!")
 main()
