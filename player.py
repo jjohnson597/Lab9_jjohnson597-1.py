@@ -33,3 +33,10 @@ class Player:
         """Subtract one coin from the player's wallet."""
         self.__wallet -= 1
     
+    def get_wallet(self):
+        """Return the number of coins in the player's wallet."""
+        return self.__wallet
+
+    def get_name(self):
+        """Return the player's name."""
+        return self.__name
