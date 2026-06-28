@@ -16,4 +16,7 @@ class Player:
         self.__name = name
         self.__wallet = 20
         self.__coin = Coin()
-        
+    
+    def toss_coin(self):
+        """Tell the player's coin to toss itself."""
+        self.__coin.toss()
