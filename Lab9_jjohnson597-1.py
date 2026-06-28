@@ -21,5 +21,15 @@ def main():
     
     while play_again.lower() == "y":
         play_again = input("\nDo you want to toss the coins? (y/n): ")
+        if play_again.lower() != "y":
+            break
 
+        print("\nTossing...")
+
+        player1.toss_coin()
+        player2.toss_coin()
+        side1 = player1.get_coin_side()
+        side2 = player2.get_coin_side()
+        print(f"{player1.get_name()} tossed {side1}")
+        print(f"{player2.get_name()} tossed {side2}")
 main()
