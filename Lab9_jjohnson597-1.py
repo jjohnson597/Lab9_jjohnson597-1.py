@@ -16,3 +16,5 @@ def main():
     print("--- Coin Match Game ---")
     print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+
+main()
