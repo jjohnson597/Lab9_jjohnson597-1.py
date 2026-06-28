@@ -24,6 +24,6 @@ class Coin:
         else:
             self.__sideup = "Tails"
 
-        def get_sideup(self):
+    def get_sideup(self):
         """Return the current side facing up."""
         return self.__sideup        
